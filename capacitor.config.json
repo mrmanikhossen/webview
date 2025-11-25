@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'webview',
   webDir: 'dist',
   server: {
-    url: 'https://your-project.vercel.app',
+    url: 'https://webview-phi-rose.vercel.app/',
     cleartext: true,
   },
 };
