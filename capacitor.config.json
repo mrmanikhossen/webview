@@ -1,13 +1,9 @@
-import { CapacitorConfig } from '@capacitor/cli';
-
-const config: CapacitorConfig = {
-  appId: 'com.webview.test',
-  appName: 'webview',
-  webDir: 'dist',
-  server: {
-    url: 'https://webview-phi-rose.vercel.app/',
-    cleartext: true,
-  },
-};
-
-export default config;
+{
+  "appId": "com.webview.test",
+  "appName": "WebViewApp",
+  "webDir": "dist",
+  "server": {
+    "url": "https://webview-phi-rose.vercel.app/",
+    "cleartext": true
+  }
+}
