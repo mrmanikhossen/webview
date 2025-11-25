@@ -1,0 +1,13 @@
+import { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'com.webview.test',
+  appName: 'webview',
+  webDir: 'dist',
+  server: {
+    url: 'https://your-project.vercel.app',
+    cleartext: true,
+  },
+};
+
+export default config;
