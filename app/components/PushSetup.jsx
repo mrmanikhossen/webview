@@ -17,6 +17,17 @@ export default function PushSetup() {
       console.log("Push registration success, token:", token.value);
     });
 
+    PushNotifications.addListener("registration", async (token) => {
+      await fetch(
+        `https://iid.googleapis.com/iid/v1/${token.value}/rel/topics/all`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: "key=YOUR_LEGACY_SERVER_KEY",
+          },
+        }
+      );
+    });
     // Step 3: Errors
     PushNotifications.addListener("registrationError", (err) => {
       console.error("Push registration error:", err.error);
