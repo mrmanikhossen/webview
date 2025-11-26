@@ -2,8 +2,9 @@
   "appId": "com.webview.test",
   "appName": "webview",
   "webDir": "public",
+  "bundledWebRuntime": false,
   "server": {
-    "url": "https://webview-phi-rose.vercel.app",
-    "cleartext": true
+    "url": "https://webview-phi-rose.vercel.app/",
+    "cleartext": false
   }
 }
