@@ -1,9 +1,9 @@
 {
   "appId": "com.webview.test",
-  "appName": "WebViewApp",
-  "webDir": "dist",
+  "appName": "webview",
+  "webDir": "public",
   "server": {
-    "url": "https://webview-phi-rose.vercel.app/",
+    "url": "https://webview-phi-rose.vercel.app",
     "cleartext": true
   }
 }
