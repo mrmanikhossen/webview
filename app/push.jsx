@@ -1,14 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
-import { initPush } from "./components/push";
+import { useEffect, useState } from "react";
+import { initPush, onToken } from "./components/push";
+import TokenDisplay from "./components/TokenDisplay";
 
 export default function AppInit() {
+  const [token, setToken] = useState(null);
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      initPush();
-    }
+    onToken((t) => setToken(t)); // store token in state
+    initPush();
   }, []);
 
-  return null; // no UI needed
+  return <>{token && <TokenDisplay token={token} />}</>;
 }
